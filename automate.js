@@ -8,7 +8,7 @@ data = []
 // paste this into browser
 // note: will kill all current entries
 
-(function reset_and_fill() {
+(function() {
     var to = 0;
 
     if ($(".destroy").length > 0) {
@@ -43,6 +43,8 @@ data = []
                 if (!is_string_valid(prize.description)) {
                     prize.description = "{{fill in}}";
                 }
+
+                prize.description = prize.description + "\n\n" + JSON.stringify(prize);
 
                 var t = this;
                 $(".clearfix > .blue").click();
