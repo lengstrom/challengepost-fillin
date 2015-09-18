@@ -1,4 +1,4 @@
-data = []
+data = [] // get data from http://sponsor.hackmit.org page via $R
 (function reset_and_fill() {
     var to = 0;
 
