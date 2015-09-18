@@ -1,4 +1,4 @@
-data = "";
+data = JSON.parse("");
 
 for (var i = 0 ; i < data.length; i++) {
     var prizes = data[i].prizes;
