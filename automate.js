@@ -1,4 +1,13 @@
-data = [] // get data from http://sponsor.hackmit.org page via $R
+// Instructions
+// ----------------------------
+// Get data from http://sponsor.hackmit.org page via JSON.stringify($R)
+// Go to http://manage.devpost.com/challenges/2924-hackmit-2015/edit?form=prizes (or replace "2924-hackmit-2015" with whatever)
+// set `data = `copy pasted from your stringified JSON``
+data = [] 
+
+// paste this into browser
+// note: will kill all current entries
+
 (function reset_and_fill() {
     var to = 0;
 
