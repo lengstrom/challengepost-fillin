@@ -1,7 +1,7 @@
-json = "";
+data = "";
 
-for (var i = 0 ; i < json.length; i++) {
-    var prizes = json[i].prizes;
+for (var i = 0 ; i < data.length; i++) {
+    var prizes = data[i].prizes;
     for (var j = 0; j < prizes.length; j++) {
         var prize = prizes[j];
         $(".clearfix > .blue").click();
