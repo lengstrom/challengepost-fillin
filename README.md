@@ -1,2 +1,2 @@
-# challengepost-fillin
-feed in json -> fill out challengepost
+# devpost-fillin
+feed in json -> fill out devpost prizes
