@@ -9,12 +9,9 @@ data = []
 // note: will kill all current entries
 
 (function() {
-    var to = 0;
-
     if ($(".destroy").length > 0) {
         confirm = function() {return true};
         $('.destroy').click();
-        to = 5000
     }
 
     setTimeout(function() {
@@ -62,15 +59,16 @@ data = []
                 }, 500);
             }
             else {
-                failed.push(prize);
-                console.log("failed: " + JSON.stringify(prize));
-                if (this.length > 0) {
-                    do_form.apply(this);
-                }
+                setTimeout(function(){
+                    failed.push(prize);
+                    console.log("failed: " + JSON.stringify(prize));
+                    if (this.length > 0) {
+                        do_form.apply(this);
+                    }  
+                }, 500);
             }
-            
         }
 
         do_form.apply(all_prizes);
-    }, to);
+    }, 5000);
 })()
