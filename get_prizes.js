@@ -12,9 +12,9 @@ $(".prize").each(function(i, el) {
     var title = text.substring(0, text.length - amount.length);
     var description = $($(el).find('p')[1]).text()
     prizes.push({
-        amount:amount,
-        title:title,
-        description:description
+        amount:amount.trim(),
+        title:title.trim(),
+        description:description.trim()
     });
 });
 
